@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'outfit-black';
+    src: url(./assets/fonts/outfit/static/Outfit-Black.ttf);
+}
+
+@font-face {
+    font-family: 'outfit-bold';
+    src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'outfit-medium';
+    src: url(./assets/fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: peachpuff;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+#inner-layer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#image-align {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-title {
+    font-family: 'outfit-black', 'young-serif';
+    color: rgba(46, 30, 0, 0.317)
+}
+
+#info-main {
+    font-family: 'outfit-medium', 'young-serif';
+}
+
+#preparation-info {
+    background-color: rgba(250, 227, 255, 0.4);
+    padding: 8px;
+    border-radius: 30px;
+    font-family: 'outfit-bold';
+}
+
+#prep-title {
+    color: darkorchid;
+    margin-left: 10px;
+}
+
+.prep-head {
+    padding-left: 15px;
+    font-weight: bold;
+    font-family: 'outfit-bold';
+}
+
+#prep-list li {
+    font-family: 'outfit-medium';
+}
+
+.list-elem {
+    list-style: none;
+}
+
+.list-elem:before {
+    content: '\2022';
+    color: darkorchid;
+}
+
+.ing-head {
+    color: brown;
+    font-family: 'young-serif';
+}
+
+.ing-list {
+    padding-left: 10px;
+}
+
+.ing-list-elem {
+    list-style: none;
+    font-family: 'outfit-medium';
+}
+
+.ing-list-elem:before {
+    content: '\25A0';
+    position: relative;
+    right: 25px;
+    color: brown;
+    padding-left: 10px;
+}
+
+#inst-title {
+    color: brown;
+    font-family: 'young-serif', 'outfit-black';
+}
+
+#inst-list li::marker {
+    color: brown;
+}
+
+.inst-elem {
+    font-family: 'outfit-medium';
+}
+
+.inst-span {
+    font-family: 'outfit-bold';
+}
+
+#nut-head {
+    color: brown;
+    font-family: 'young-serif';
+}
+
+#nutrition-div p {
+    font-family: 'outfit-medium';
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+.font-change {
+    font-family: 'outfit-medium', 'young-serif';
+    position: relative;
+    left: 40px;
+}
+
+.color-change {
+    font-family: 'outfit-bold';
+    color: brown;
+    padding-left: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .color-change {
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #inner-layer {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .color-change {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #inner-layer {
+        padding: 0px;
+    }
+    .image-layer img {
+        width: 100%;
+    }
+}
